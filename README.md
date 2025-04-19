@@ -46,9 +46,9 @@ pip install -r dmd_machine/requirements.txt
 **Case 1: Turbulent flow passing around a single bridge pillar**  
 Details can be seen in the 'case1_code.ipynb', which contain all functions mentioned in the corresponding article, which includes CAE models,SAE models, DMD model and figure plotting of computing results.
 
-##Reference
-*Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong, et al. "A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers." Ocean Engineering 308 (2024): 118308.
-*@article{zhu2024data,
+## Reference
+**Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong, et al. "A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers." Ocean Engineering 308 (2024): 118308.
+**@article{zhu2024data,
   title={A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers},
   author={Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong and Feng, Yuntian and Fu, Rui and Wang, Jinsheng},
   journal={Ocean Engineering},
