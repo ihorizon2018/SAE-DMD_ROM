@@ -11,7 +11,7 @@ This is the code base for SAE-DMD. [A data-driven computational framework for no
 - [Background](#background)
 - [Data](#data)
 - [Install](#install)
-- [Train-models and Outputs](#train-models and outputs)
+- [Train-models and Outputs](#Train-models and Outputs)
 - [License](#license)
 
 
@@ -36,10 +36,10 @@ conda create -n v_env_ROM python=3.6
 conda activate v_env_ROM
 ```
 ```
-mv dmd_machine/vtktools.py ***/v_env_ROM/lib/python3.6/site-packages/   
+mv rom_machine/vtktools.py ***/v_env_ROM/lib/python3.6/site-packages/   
 ```
 ```
-pip install -r dmd_machine/requirements.txt  
+pip install -r rom_machine/requirements.txt  
 ```
 
 ## Train-models and Outputs
@@ -47,8 +47,8 @@ pip install -r dmd_machine/requirements.txt
 Details can be seen in the 'case1_code.ipynb', which contain all functions mentioned in the corresponding article, which includes CAE models,SAE models, DMD model and figure plotting of computing results.
 
 ## Reference
-**Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong, et al. "A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers." Ocean Engineering 308 (2024): 118308.
-**@article{zhu2024data,
+Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong, et al. "A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers." Ocean Engineering 308 (2024): 118308.
+@article{zhu2024data,
   title={A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers},
   author={Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong and Feng, Yuntian and Fu, Rui and Wang, Jinsheng},
   journal={Ocean Engineering},
