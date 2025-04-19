@@ -1,4 +1,4 @@
-# ROM-DMD-LSTM
+# SAE-DMD ROM
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
@@ -11,13 +11,13 @@ This is the code base for SAE-DMD. [A data-driven computational framework for no
 - [Background](#background)
 - [Data](#data)
 - [Install](#install)
-- [Train-models and Outputs](#Train-models and Outputs)
+- [Models and Outputs](#models and outputs)
 - [License](#license)
 
 
 ## Background
 
- Repetitively conducting high-fidelity numerical simulations under varying conditions is often a crucial requirement in the optimisation design of offshore bridges and structures. Reduced-order modelling (ROM) provides an efficient approach to quickly and reliably obtain solutions by extracting low-dimensional representations from full-order numerical systems. This paper presents a novel data-driven computational framework for nonintrusive ROM of turbulent/unsteady flows passing around bridge piers, consisting of two interconnected components: the Stacked Autoencoder (SAE) and the Dynamic Mode Decomposition (DMD). The novelty lies in utilising SAE to achieve nonlinear dimensionality reduction by projecting the full-order dynamical system onto a low-dimensional latent space, followed by constructing reduced-order models through data-driven DMD to represent fluid dynamics in the latent feature space. This new SAE-DMD-based method is applied to develop
+Repetitively conducting high-fidelity numerical simulations under varying conditions is often a crucial requirement in the optimisation design of offshore bridges and structures. Reduced-order modelling (ROM) provides an efficient approach to quickly and reliably obtain solutions by extracting low-dimensional representations from full-order numerical systems. This paper presents a novel data-driven computational framework for nonintrusive ROM of turbulent/unsteady flows passing around bridge piers, consisting of two interconnected components: the Stacked Autoencoder (SAE) and the Dynamic Mode Decomposition (DMD). The novelty lies in utilising SAE to achieve nonlinear dimensionality reduction by projecting the full-order dynamical system onto a low-dimensional latent space, followed by constructing reduced-order models through data-driven DMD to represent fluid dynamics in the latent feature space. This new SAE-DMD-based method is applied to develop
  reduced-order models for two unsteady flow problems, and it is also compared with classical DMD and high fidelity numerical simulations in terms of modelling accuracy, forecasting efficiency and memory requirements. The results demonstrate that the proposed method can rapidly offer reliable predictions while significantly reducing memory usage and it exhibits excellent extrapolation capability by accurately preserving primary nonlinear characteristics of fluid dynamics. This new method shows potential to overcome computational challenges associated with high-resolution numerical modelling for complex large-scale flow problems.
 
 ## Data
@@ -42,13 +42,13 @@ mv vtktools.py ***/v_env_ROM/lib/python3.6/site-packages/
 pip install -r requirements.txt  
 ```
 
-## Train-models and Outputs
+## Models and Outputs
 **Case 1: Turbulent flow passing around a single bridge pillar**  
 Details can be seen in the 'case1_code.ipynb', which contain all functions mentioned in the corresponding article, which includes CAE models,SAE models, DMD model and figure plotting of computing results.
 
 ## Reference
-**Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong, et al. "A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers." Ocean Engineering 308 (2024): 118308.
-**@article{zhu2024data,
+Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong, et al. "A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers." Ocean Engineering 308 (2024): 118308.
+@article{zhu2024data,
   title={A data-driven computational framework for non-intrusive reduced-order modelling of turbulent flows passing around bridge piers},
   author={Zhu, Chuanhua and Xiao, Dunhui and Fu, Jinlong and Feng, Yuntian and Fu, Rui and Wang, Jinsheng},
   journal={Ocean Engineering},
